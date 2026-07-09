@@ -50,11 +50,12 @@ export default function HomePage() {
   return (
     <main>
       <section className="hero">
-        <p className="muted">Calendar yield · no-show risk · recovery actions</p>
+        <p className="muted">Lab only · calendar yield · no-show risk · recovery actions</p>
         <h1 className="brand">AgendaYield</h1>
         <p className="lede">
           Cockpit de yield para agendas de serviços: ocupação, risco de falta, confirmações
-          pendentes, receita perdida e ações para recuperar horários ociosos.
+          pendentes, receita perdida e ações para recuperar horários ociosos. Dados sintéticos
+          do Studio Aurora — lab de portfólio, não operação real.
         </p>
         {demo && (
           <p className="muted">

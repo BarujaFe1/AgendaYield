@@ -30,6 +30,14 @@
   <img src="./assets/hero-cover.png" alt="AgendaYield product overview" width="100%" />
 </p>
 
+<p align="center">
+  <a href="https://agenda-yield.vercel.app"><strong>🌐 Live Demo</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/BarujaFe1/AgendaYield"><strong>GitHub</strong></a>
+</p>
+
+> **Live demo note:** the public Vercel lab runs a **frontend-first** yield cockpit in the browser (synthetic studio agenda). The FastAPI package remains available for local/API workflows. This is an operational analytics lab — **not** a clinic EMR, marketplace, or production booking system.
+
 ---
 
 ## 1. Visão Geral / Overview
@@ -254,10 +262,11 @@ O projeto adota uma arquitetura monorepo simplificada:
 ```text
 AgendaYield/
 ├── apps/
-│   ├── web/                         # Frontend Next.js (App Router)
+│   ├── web/                         # Frontend Next.js (App Router) — Live Demo
 │   │   ├── app/                     # Cockpit principal
 │   │   ├── components/              # Charts e blocos de UI
-│   │   ├── lib/                     # API client
+│   │   ├── lib/                     # Client lab engine + API facade
+│   │   ├── public/data/             # Seed JSON/CSV sintético
 │   │   └── types/                   # Tipos TypeScript
 │   │
 │   └── api/                         # Backend FastAPI
@@ -313,26 +322,43 @@ Recovery Action Board
 
 ## 🚀 Quick Start / Início Rápido
 
-### Pré-requisitos
+### Live Demo
+Abra o lab publicado: **[https://agenda-yield.vercel.app](https://agenda-yield.vercel.app)**
+
+Checklist rápido na demo:
+1. Ler KPIs de ocupação, no-show e receita perdida
+2. Abrir o No-Show Risk Board (high / medium / low)
+3. Trabalhar a fila de confirmação pendente
+4. Revisar lista de encaixe e ações de recuperação com impacto em R$
+
+### Pré-requisitos (local)
 - **Node.js** v20 ou superior
-- **Python** v3.10 ou superior
+- **Python** v3.10 ou superior (opcional — só se for usar a API FastAPI)
 - **Git**
 
-### Opção 1 — Execução integrada no Windows
+### Opção 1 — Frontend-only (mesmo modo da Vercel)
+```bash
+cd apps/web
+npm install
+npm run dev
+```
+*Lab em [http://localhost:3000](http://localhost:3000). A analytics roda no browser com `public/data/studio_agenda_demo.json`.*
+
+### Opção 2 — Execução integrada no Windows (web + API)
 Na pasta raiz do projeto:
 ```bash
 start.bat
 ```
 Este script cria o venv Python, instala dependências, sobe a API FastAPI na porta `8000`, o frontend Next.js na porta `3000` e abre o navegador.
 
-### Opção 2 — Execução manual
+### Opção 3 — API FastAPI manual (`apps/api`)
 
 #### 0. Gerar seed e assets (se necessário)
 ```bash
 python scripts/generate_assets_and_seed.py
 ```
 
-#### 1. Backend FastAPI (`apps/api`)
+#### 1. Backend
 ```bash
 cd apps/api
 python -m venv .venv
@@ -342,14 +368,6 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload --port 8000
 ```
 *API ativa em [http://127.0.0.1:8000](http://127.0.0.1:8000). Docs em `/docs`.*
-
-#### 2. Frontend Next.js (`apps/web`)
-```bash
-cd apps/web
-npm install
-npm run dev
-```
-*Frontend ativo em [http://localhost:3000](http://localhost:3000).*
 
 ---
 

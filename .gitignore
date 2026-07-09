@@ -53,3 +53,7 @@ temp/
 # Uploaded user data (keep seed only)
 data/uploads/*
 !data/uploads/.gitkeep
+
+# Vercel local link
+.vercel/
+**/.vercel/

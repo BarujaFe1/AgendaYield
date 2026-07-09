@@ -1,3 +1,10 @@
+import {
+  buildActions,
+  buildDashboard,
+  buildRiskBoard,
+  loadAppointments,
+  summarizeDemo,
+} from "@/lib/engine/yield";
 import type {
   ActionsResponse,
   DashboardResponse,
@@ -5,29 +12,29 @@ import type {
   RiskBoardResponse,
 } from "@/types";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000";
+let cached: Awaited<ReturnType<typeof loadAppointments>> | null = null;
 
-async function getJson<T>(path: string): Promise<T> {
-  const res = await fetch(`${API_URL}${path}`, { cache: "no-store" });
-  if (!res.ok) {
-    const detail = await res.text();
-    throw new Error(detail || `Request failed: ${path}`);
-  }
-  return res.json();
+async function rows() {
+  if (!cached) cached = await loadAppointments();
+  return cached;
 }
 
-export function fetchDemo(): Promise<DemoSummary> {
-  return getJson("/api/demo");
+/** Client-side lab API — no remote Python required for the live demo. */
+export async function fetchDemo(): Promise<DemoSummary> {
+  return summarizeDemo(await rows());
 }
 
-export function fetchDashboard(): Promise<DashboardResponse> {
-  return getJson("/api/dashboard");
+export async function fetchDashboard(): Promise<DashboardResponse> {
+  return buildDashboard(await rows());
 }
 
-export function fetchRiskBoard(): Promise<RiskBoardResponse> {
-  return getJson("/api/risk-board");
+export async function fetchRiskBoard(): Promise<RiskBoardResponse> {
+  return buildRiskBoard(await rows());
 }
 
-export function fetchActions(): Promise<ActionsResponse> {
-  return getJson("/api/actions");
+export async function fetchActions(): Promise<ActionsResponse> {
+  const data = await rows();
+  const dash = buildDashboard(data);
+  const risk = buildRiskBoard(data);
+  return buildActions(dash, risk);
 }
