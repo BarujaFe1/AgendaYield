@@ -31,12 +31,12 @@
 </p>
 
 <p align="center">
-  <a href="https://agenda-yield.vercel.app"><strong>🌐 Live Demo</strong></a>
+  <a href="https://barujafe1.github.io/AgendaYield/"><strong>🌐 Live Demo</strong></a>
   &nbsp;·&nbsp;
   <a href="https://github.com/BarujaFe1/AgendaYield"><strong>GitHub</strong></a>
 </p>
 
-> **Live demo note:** the public Vercel lab runs a **frontend-first** yield cockpit in the browser (synthetic studio agenda). The FastAPI package remains available for local/API workflows. This is an operational analytics lab — **not** a clinic EMR, marketplace, or production booking system.
+> **Live demo note:** the public lab runs a **frontend-first** yield cockpit in the browser (synthetic studio agenda on GitHub Pages). The FastAPI package remains available for local/API workflows. A Vercel project (`agenda-yield`, root `apps/web`) is linked for future Hobby-quota deploys. This is an operational analytics lab — **not** a clinic EMR, marketplace, or production booking system.
 
 ---
 
@@ -323,7 +323,7 @@ Recovery Action Board
 ## 🚀 Quick Start / Início Rápido
 
 ### Live Demo
-Abra o lab publicado: **[https://agenda-yield.vercel.app](https://agenda-yield.vercel.app)**
+Abra o lab publicado: **[https://barujafe1.github.io/AgendaYield/](https://barujafe1.github.io/AgendaYield/)**
 
 Checklist rápido na demo:
 1. Ler KPIs de ocupação, no-show e receita perdida
