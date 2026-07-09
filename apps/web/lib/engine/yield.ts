@@ -289,7 +289,8 @@ export function buildActions(
 }
 
 export async function loadAppointments(): Promise<Appointment[]> {
-  const res = await fetch("/data/studio_agenda_demo.json", { cache: "force-cache" });
+  // Relative URL keeps GitHub Pages basePath (/AgendaYield) working.
+  const res = await fetch("data/studio_agenda_demo.json", { cache: "force-cache" });
   if (!res.ok) throw new Error(`Failed to load demo agenda (${res.status})`);
   return res.json() as Promise<Appointment[]>;
 }
