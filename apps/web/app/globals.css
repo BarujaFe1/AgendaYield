@@ -1,0 +1,224 @@
+:root {
+  --bg: #07140f;
+  --bg-elevated: #102018;
+  --ink: #e8f6f0;
+  --muted: #8aa39a;
+  --accent: #2dd4a8;
+  --accent-2: #f0b429;
+  --ok: #2fbf71;
+  --watch: #f0b429;
+  --risk: #ff6b6b;
+  --line: rgba(45, 212, 168, 0.22);
+  --font-display: "Segoe UI", "Trebuchet MS", sans-serif;
+  --font-body: "Segoe UI", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(1100px 560px at 8% -8%, rgba(45, 212, 168, 0.14), transparent 55%),
+    radial-gradient(900px 500px at 92% 0%, rgba(240, 180, 41, 0.08), transparent 50%),
+    linear-gradient(180deg, #040c09 0%, var(--bg) 42%, #0b1a14 100%);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+.hero {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.3rem);
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.lede {
+  color: var(--muted);
+  max-width: 48rem;
+  line-height: 1.55;
+  font-size: 1.05rem;
+}
+
+.muted {
+  color: var(--muted);
+  margin: 0;
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.panel {
+  background: linear-gradient(180deg, rgba(16, 32, 24, 0.96), rgba(8, 18, 14, 0.92));
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.panel h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+}
+
+.grid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.kpi {
+  background: rgba(7, 20, 15, 0.55);
+  border: 1px solid rgba(45, 212, 168, 0.14);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+}
+
+.kpi .label {
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.kpi .value {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.badge.high {
+  color: #ffd0d0;
+  background: rgba(255, 107, 107, 0.14);
+  border-color: rgba(255, 107, 107, 0.35);
+}
+
+.badge.medium {
+  color: #ffe6a8;
+  background: rgba(240, 180, 41, 0.14);
+  border-color: rgba(240, 180, 41, 0.35);
+}
+
+.badge.low {
+  color: #b8f5d8;
+  background: rgba(47, 191, 113, 0.14);
+  border-color: rgba(47, 191, 113, 0.35);
+}
+
+.badge.now {
+  color: #ffd0d0;
+  background: rgba(255, 107, 107, 0.14);
+}
+
+.badge.today {
+  color: #ffe6a8;
+  background: rgba(240, 180, 41, 0.14);
+}
+
+.badge.this_week {
+  color: #b8f5d8;
+  background: rgba(47, 191, 113, 0.14);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.55rem 0.4rem;
+  border-bottom: 1px solid rgba(45, 212, 168, 0.1);
+  vertical-align: top;
+}
+
+th {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.two-col {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1.2fr 1fr;
+}
+
+@media (max-width: 900px) {
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+.error {
+  color: #ffb4b4;
+  background: rgba(255, 107, 107, 0.12);
+  border: 1px solid rgba(255, 107, 107, 0.35);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.notice {
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-top: 0.75rem;
+}
+
+.action-card {
+  border: 1px solid rgba(45, 212, 168, 0.14);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.65rem;
+  background: rgba(7, 20, 15, 0.45);
+}
+
+.action-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.action-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.35rem;
+}

@@ -1,0 +1,337 @@
+appointment_id,client_id,client_name,professional,service,starts_at,duration_min,ticket,confirmation_status,attendance_status,prior_no_shows,lead_time_hours,channel
+APT-0001,CLI-062,Lucas Silva,Ana Ribeiro,Consulta estética,2026-05-04T09:30:00,30,128.18,pending,no_show,2,36,manual
+APT-0002,CLI-005,Patricia Almeida,Ana Ribeiro,Limpeza de pele,2026-05-04T10:30:00,90,191.38,confirmed,attended,0,36,manual
+APT-0003,CLI-038,Gustavo Souza,Ana Ribeiro,Massagem,2026-05-04T12:00:00,50,160.72,pending,no_show,1,6,email
+APT-0004,CLI-055,Sofia Pereira,Ana Ribeiro,Botox,2026-05-04T14:30:00,45,603.65,confirmed,attended,0,12,email
+APT-0005,CLI-041,Lucas Almeida,Ana Ribeiro,Massagem,2026-05-04T15:00:00,50,154.49,confirmed,attended,0,72,email
+APT-0006,CLI-047,Diego Santos,Bruno Costa,Limpeza de pele,2026-05-04T09:30:00,90,190.87,confirmed,attended,1,72,manual
+APT-0007,CLI-052,Marina Martins,Bruno Costa,Consulta estética,2026-05-04T11:30:00,30,134.15,pending,no_show,2,36,manual
+APT-0008,CLI-025,Rodrigo Souza,Bruno Costa,Consulta estética,2026-05-04T12:30:00,30,117.97,pending,no_show,2,6,email
+APT-0009,CLI-075,Sofia Martins,Bruno Costa,Limpeza de pele,2026-05-04T13:30:00,90,175.14,pending,attended,2,120,whatsapp
+APT-0010,CLI-080,Rodrigo Rodrigues,Bruno Costa,Consulta estética,2026-05-04T15:00:00,30,134.34,pending,attended,1,96,manual
+APT-0011,CLI-049,Marina Silva,Camila Dias,Depilação laser,2026-05-04T09:30:00,40,219.19,pending,attended,0,24,email
+APT-0012,CLI-055,Larissa Rodrigues,Camila Dias,Massagem,2026-05-04T10:00:00,50,167.71,pending,attended,0,12,whatsapp
+APT-0013,CLI-044,Gustavo Oliveira,Camila Dias,Preenchimento,2026-05-04T12:30:00,60,837.74,declined,attended,1,48,manual
+APT-0014,CLI-059,Natalia Martins,Camila Dias,Preenchimento,2026-05-04T14:30:00,60,818.9,confirmed,attended,0,24,email
+APT-0015,CLI-023,Julia Santos,Camila Dias,Depilação laser,2026-05-04T16:00:00,40,227.36,confirmed,cancelled,1,48,whatsapp
+APT-0016,CLI-077,Henrique Santos,Ana Ribeiro,Limpeza de pele,2026-05-05T09:00:00,90,184.6,confirmed,attended,2,24,manual
+APT-0017,CLI-005,Sofia Rodrigues,Ana Ribeiro,Depilação laser,2026-05-05T11:00:00,40,241.98,confirmed,attended,0,48,email
+APT-0018,CLI-009,Diego Souza,Ana Ribeiro,Limpeza de pele,2026-05-05T12:30:00,90,191.08,confirmed,no_show,0,36,whatsapp
+APT-0019,CLI-049,Marina Silva,Ana Ribeiro,Botox,2026-05-05T14:30:00,45,692.04,confirmed,attended,0,36,manual
+APT-0020,CLI-015,Henrique Souza,Ana Ribeiro,Massagem,2026-05-05T15:00:00,50,160.36,confirmed,attended,1,36,manual
+APT-0021,CLI-062,Lucas Silva,Bruno Costa,Limpeza de pele,2026-05-05T09:00:00,90,181.75,pending,no_show,3,12,email
+APT-0022,CLI-017,Larissa Ferreira,Bruno Costa,Botox,2026-05-05T11:00:00,45,604.58,confirmed,attended,0,12,manual
+APT-0023,CLI-010,Marina Souza,Bruno Costa,Limpeza de pele,2026-05-05T12:00:00,90,179.24,confirmed,attended,0,120,email
+APT-0024,CLI-016,Isabela Lima,Bruno Costa,Preenchimento,2026-05-05T14:00:00,60,921.89,confirmed,attended,1,120,manual
+APT-0025,CLI-073,Amanda Silva,Bruno Costa,Limpeza de pele,2026-05-05T16:00:00,90,168.07,confirmed,attended,0,24,whatsapp
+APT-0026,CLI-051,Diego Almeida,Camila Dias,Consulta estética,2026-05-05T09:00:00,30,112.37,confirmed,no_show,0,36,manual
+APT-0027,CLI-012,Patricia Rodrigues,Camila Dias,Massagem,2026-05-05T10:00:00,50,155.7,pending,cancelled,1,36,whatsapp
+APT-0028,CLI-060,Thiago Ferreira,Camila Dias,Consulta estética,2026-05-05T12:00:00,30,112.8,confirmed,attended,1,12,manual
+APT-0029,CLI-046,Natalia Lima,Camila Dias,Botox,2026-05-05T13:00:00,45,706.39,pending,attended,0,12,manual
+APT-0030,CLI-077,Eduardo Rodrigues,Camila Dias,Preenchimento,2026-05-05T14:00:00,60,975.11,declined,no_show,1,48,email
+APT-0031,CLI-069,Lucas Rodrigues,Ana Ribeiro,Limpeza de pele,2026-05-06T09:30:00,90,188.43,pending,cancelled,0,36,email
+APT-0032,CLI-001,Henrique Lima,Ana Ribeiro,Massagem,2026-05-06T11:30:00,50,157.87,pending,no_show,0,96,whatsapp
+APT-0033,CLI-030,Larissa Oliveira,Ana Ribeiro,Consulta estética,2026-05-06T13:00:00,30,133.08,confirmed,no_show,2,96,manual
+APT-0034,CLI-035,Rodrigo Silva,Ana Ribeiro,Botox,2026-05-06T14:00:00,45,645.4,confirmed,no_show,1,24,whatsapp
+APT-0035,CLI-004,Sofia Souza,Ana Ribeiro,Preenchimento,2026-05-06T15:30:00,60,860.94,declined,attended,2,96,whatsapp
+APT-0036,CLI-027,Gustavo Silva,Bruno Costa,Botox,2026-05-06T09:00:00,45,693.56,pending,attended,0,72,whatsapp
+APT-0037,CLI-030,Rafael Santos,Bruno Costa,Preenchimento,2026-05-06T10:00:00,60,873.12,pending,attended,3,120,whatsapp
+APT-0038,CLI-034,Julia Souza,Bruno Costa,Botox,2026-05-06T12:30:00,45,681.39,declined,no_show,1,12,email
+APT-0039,CLI-024,Rodrigo Pereira,Bruno Costa,Consulta estética,2026-05-06T13:30:00,30,113.0,confirmed,attended,0,48,email
+APT-0040,CLI-026,Amanda Almeida,Bruno Costa,Preenchimento,2026-05-06T14:00:00,60,944.96,pending,attended,2,12,whatsapp
+APT-0041,CLI-025,Rodrigo Souza,Camila Dias,Massagem,2026-05-06T09:00:00,50,176.0,confirmed,attended,3,72,manual
+APT-0042,CLI-005,Gustavo Pereira,Camila Dias,Preenchimento,2026-05-06T11:00:00,60,951.97,confirmed,attended,0,24,whatsapp
+APT-0043,CLI-035,Patricia Lima,Camila Dias,Massagem,2026-05-06T13:00:00,50,172.34,pending,no_show,2,6,manual
+APT-0044,CLI-063,Amanda Ferreira,Camila Dias,Consulta estética,2026-05-06T15:00:00,30,128.06,confirmed,attended,1,36,manual
+APT-0045,CLI-045,Thiago Rodrigues,Camila Dias,Limpeza de pele,2026-05-06T16:00:00,90,176.78,pending,attended,2,72,whatsapp
+APT-0046,CLI-004,Julia Silva,Ana Ribeiro,Botox,2026-05-07T09:00:00,45,691.38,pending,attended,2,12,email
+APT-0047,CLI-054,Carolina Souza,Ana Ribeiro,Depilação laser,2026-05-07T10:00:00,40,236.65,pending,attended,0,6,whatsapp
+APT-0048,CLI-021,Natalia Ferreira,Ana Ribeiro,Botox,2026-05-07T11:00:00,45,726.43,confirmed,attended,0,12,manual
+APT-0049,CLI-015,Isabela Martins,Ana Ribeiro,Preenchimento,2026-05-07T12:00:00,60,951.17,pending,attended,1,96,email
+APT-0050,CLI-040,Larissa Souza,Ana Ribeiro,Depilação laser,2026-05-07T14:30:00,40,205.81,confirmed,cancelled,2,120,email
+APT-0051,CLI-063,Larissa Pereira,Bruno Costa,Botox,2026-05-07T09:00:00,45,688.21,confirmed,cancelled,1,12,manual
+APT-0052,CLI-015,Marina Almeida,Bruno Costa,Botox,2026-05-07T10:30:00,45,652.62,confirmed,cancelled,1,120,manual
+APT-0053,CLI-008,Julia Martins,Bruno Costa,Consulta estética,2026-05-07T11:00:00,30,130.46,confirmed,attended,1,72,manual
+APT-0054,CLI-026,Rodrigo Martins,Bruno Costa,Consulta estética,2026-05-07T12:00:00,30,118.47,confirmed,no_show,1,48,manual
+APT-0055,CLI-076,Rafael Ferreira,Bruno Costa,Depilação laser,2026-05-07T13:00:00,40,206.09,declined,attended,0,6,email
+APT-0056,CLI-069,Isabela Oliveira,Camila Dias,Botox,2026-05-07T09:30:00,45,647.29,confirmed,attended,0,72,email
+APT-0057,CLI-021,Marina Ferreira,Camila Dias,Preenchimento,2026-05-07T10:00:00,60,934.53,declined,cancelled,0,6,manual
+APT-0058,CLI-034,Julia Souza,Camila Dias,Limpeza de pele,2026-05-07T12:00:00,90,199.72,pending,attended,2,24,email
+APT-0059,CLI-063,Larissa Pereira,Camila Dias,Consulta estética,2026-05-07T14:00:00,30,117.86,pending,no_show,1,12,manual
+APT-0060,CLI-044,Thiago Martins,Camila Dias,Limpeza de pele,2026-05-07T15:00:00,90,190.46,confirmed,attended,1,96,manual
+APT-0061,CLI-011,Lucas Lima,Ana Ribeiro,Botox,2026-05-08T09:00:00,45,667.26,confirmed,attended,2,12,manual
+APT-0062,CLI-028,Marina Rodrigues,Ana Ribeiro,Preenchimento,2026-05-08T10:30:00,60,989.82,confirmed,no_show,2,96,manual
+APT-0063,CLI-003,Beatriz Almeida,Ana Ribeiro,Depilação laser,2026-05-08T12:00:00,40,222.85,confirmed,attended,0,48,manual
+APT-0064,CLI-063,Larissa Pereira,Ana Ribeiro,Massagem,2026-05-08T13:00:00,50,171.22,pending,cancelled,2,12,manual
+APT-0065,CLI-055,Carolina Pereira,Ana Ribeiro,Massagem,2026-05-08T15:00:00,50,158.09,confirmed,attended,0,72,manual
+APT-0066,CLI-055,Larissa Rodrigues,Bruno Costa,Consulta estética,2026-05-08T09:00:00,30,128.6,confirmed,attended,0,36,manual
+APT-0067,CLI-043,Henrique Ferreira,Bruno Costa,Depilação laser,2026-05-08T10:30:00,40,218.64,confirmed,attended,0,36,manual
+APT-0068,CLI-055,Felipe Almeida,Bruno Costa,Massagem,2026-05-08T11:00:00,50,155.24,pending,cancelled,0,72,whatsapp
+APT-0069,CLI-055,Sofia Pereira,Bruno Costa,Consulta estética,2026-05-08T13:00:00,30,124.55,confirmed,attended,0,24,manual
+APT-0070,CLI-011,Thiago Santos,Bruno Costa,Massagem,2026-05-08T14:30:00,50,164.29,confirmed,no_show,1,72,email
+APT-0071,CLI-022,Pedro Rodrigues,Camila Dias,Limpeza de pele,2026-05-08T09:00:00,90,166.04,pending,attended,1,24,email
+APT-0072,CLI-043,Henrique Ferreira,Camila Dias,Depilação laser,2026-05-08T11:30:00,40,205.28,confirmed,attended,0,6,email
+APT-0073,CLI-046,Patricia Silva,Camila Dias,Limpeza de pele,2026-05-08T12:30:00,90,180.58,confirmed,attended,0,48,manual
+APT-0074,CLI-047,Diego Rodrigues,Camila Dias,Massagem,2026-05-08T14:00:00,50,165.4,confirmed,attended,1,120,whatsapp
+APT-0075,CLI-022,Lucas Souza,Camila Dias,Massagem,2026-05-08T16:30:00,50,147.29,confirmed,attended,0,12,email
+APT-0076,CLI-071,Eduardo Ferreira,Ana Ribeiro,Consulta estética,2026-05-09T09:30:00,30,126.9,pending,attended,1,48,email
+APT-0077,CLI-043,Patricia Souza,Ana Ribeiro,Consulta estética,2026-05-09T10:30:00,30,112.11,pending,attended,0,36,whatsapp
+APT-0078,CLI-063,Eduardo Martins,Ana Ribeiro,Preenchimento,2026-05-09T11:00:00,60,907.88,confirmed,attended,2,120,email
+APT-0079,CLI-052,Marina Martins,Bruno Costa,Depilação laser,2026-05-09T09:00:00,40,212.47,confirmed,no_show,3,72,manual
+APT-0080,CLI-046,Patricia Silva,Bruno Costa,Massagem,2026-05-09T10:00:00,50,163.81,pending,no_show,0,6,email
+APT-0081,CLI-078,Rafael Martins,Bruno Costa,Preenchimento,2026-05-09T12:00:00,60,891.49,declined,cancelled,1,120,email
+APT-0082,CLI-005,Lucas Oliveira,Camila Dias,Consulta estética,2026-05-09T09:00:00,30,123.6,confirmed,attended,0,120,email
+APT-0083,CLI-025,Amanda Lima,Camila Dias,Limpeza de pele,2026-05-09T10:30:00,90,196.9,declined,attended,2,96,email
+APT-0084,CLI-057,Pedro Souza,Camila Dias,Depilação laser,2026-05-09T12:00:00,40,226.57,confirmed,attended,2,120,email
+APT-0085,CLI-077,Henrique Santos,Ana Ribeiro,Depilação laser,2026-05-11T09:00:00,40,203.0,confirmed,cancelled,2,36,email
+APT-0086,CLI-047,Diego Santos,Ana Ribeiro,Limpeza de pele,2026-05-11T10:00:00,90,175.44,confirmed,attended,1,24,email
+APT-0087,CLI-073,Diego Ferreira,Ana Ribeiro,Depilação laser,2026-05-11T12:30:00,40,240.42,declined,attended,0,36,email
+APT-0088,CLI-053,Amanda Rodrigues,Ana Ribeiro,Depilação laser,2026-05-11T13:00:00,40,231.44,pending,attended,1,48,whatsapp
+APT-0089,CLI-072,Rodrigo Ferreira,Ana Ribeiro,Depilação laser,2026-05-11T14:30:00,40,233.09,confirmed,attended,1,96,manual
+APT-0090,CLI-051,Diego Almeida,Bruno Costa,Depilação laser,2026-05-11T09:30:00,40,231.6,pending,attended,1,120,manual
+APT-0091,CLI-055,Henrique Silva,Bruno Costa,Botox,2026-05-11T10:00:00,45,666.37,pending,attended,0,72,email
+APT-0092,CLI-003,Beatriz Almeida,Bruno Costa,Limpeza de pele,2026-05-11T11:00:00,90,190.54,confirmed,attended,0,12,manual
+APT-0093,CLI-053,Amanda Rodrigues,Bruno Costa,Limpeza de pele,2026-05-11T13:00:00,90,168.06,pending,no_show,1,120,manual
+APT-0094,CLI-062,Thiago Souza,Bruno Costa,Consulta estética,2026-05-11T15:30:00,30,114.39,confirmed,attended,4,12,email
+APT-0095,CLI-050,Pedro Pereira,Camila Dias,Limpeza de pele,2026-05-11T09:30:00,90,190.14,confirmed,attended,0,72,whatsapp
+APT-0096,CLI-030,Rafael Santos,Camila Dias,Botox,2026-05-11T11:00:00,45,680.93,pending,attended,3,36,email
+APT-0097,CLI-025,Julia Ferreira,Camila Dias,Preenchimento,2026-05-11T12:00:00,60,872.05,confirmed,attended,1,24,email
+APT-0098,CLI-017,Larissa Ferreira,Camila Dias,Consulta estética,2026-05-11T14:30:00,30,119.55,pending,no_show,0,96,email
+APT-0099,CLI-076,Thiago Lima,Camila Dias,Massagem,2026-05-11T15:00:00,50,171.03,confirmed,attended,0,96,whatsapp
+APT-0100,CLI-001,Henrique Lima,Ana Ribeiro,Massagem,2026-05-12T09:00:00,50,155.22,confirmed,cancelled,1,72,manual
+APT-0101,CLI-046,Beatriz Santos,Ana Ribeiro,Consulta estética,2026-05-12T11:00:00,30,119.16,pending,no_show,1,48,whatsapp
+APT-0102,CLI-053,Thiago Pereira,Ana Ribeiro,Limpeza de pele,2026-05-12T12:00:00,90,184.71,pending,attended,2,36,email
+APT-0103,CLI-017,Larissa Ferreira,Ana Ribeiro,Botox,2026-05-12T14:00:00,45,696.04,pending,attended,1,72,whatsapp
+APT-0104,CLI-071,Carolina Rodrigues,Ana Ribeiro,Consulta estética,2026-05-12T15:30:00,30,126.55,confirmed,attended,1,96,manual
+APT-0105,CLI-005,Patricia Almeida,Bruno Costa,Preenchimento,2026-05-12T09:00:00,60,986.68,pending,attended,0,12,email
+APT-0106,CLI-047,Diego Santos,Bruno Costa,Massagem,2026-05-12T11:00:00,50,148.65,pending,no_show,1,48,whatsapp
+APT-0107,CLI-077,Henrique Santos,Bruno Costa,Preenchimento,2026-05-12T13:30:00,60,987.79,pending,no_show,2,24,manual
+APT-0108,CLI-002,Gustavo Martins,Bruno Costa,Massagem,2026-05-12T15:00:00,50,177.25,confirmed,attended,2,96,email
+APT-0109,CLI-064,Felipe Souza,Bruno Costa,Limpeza de pele,2026-05-12T17:00:00,90,190.28,pending,no_show,1,36,manual
+APT-0110,CLI-061,Felipe Silva,Camila Dias,Consulta estética,2026-05-12T09:30:00,30,115.49,declined,attended,1,12,manual
+APT-0111,CLI-004,Julia Silva,Camila Dias,Massagem,2026-05-12T10:30:00,50,173.75,confirmed,no_show,2,24,manual
+APT-0112,CLI-043,Patricia Souza,Camila Dias,Botox,2026-05-12T12:30:00,45,725.92,pending,attended,0,24,whatsapp
+APT-0113,CLI-030,Larissa Oliveira,Camila Dias,Massagem,2026-05-12T13:00:00,50,172.43,pending,no_show,2,6,manual
+APT-0114,CLI-015,Julia Oliveira,Camila Dias,Preenchimento,2026-05-12T15:30:00,60,957.29,confirmed,attended,1,96,manual
+APT-0115,CLI-016,Lucas Ferreira,Ana Ribeiro,Massagem,2026-05-13T09:30:00,50,156.85,pending,attended,1,6,manual
+APT-0116,CLI-012,Pedro Ferreira,Ana Ribeiro,Limpeza de pele,2026-05-13T11:00:00,90,168.51,confirmed,attended,1,12,manual
+APT-0117,CLI-013,Marina Oliveira,Ana Ribeiro,Botox,2026-05-13T13:00:00,45,663.72,confirmed,attended,1,72,email
+APT-0118,CLI-069,Lucas Rodrigues,Ana Ribeiro,Limpeza de pele,2026-05-13T14:00:00,90,181.93,confirmed,attended,0,96,email
+APT-0119,CLI-004,Lucas Pereira,Ana Ribeiro,Consulta estética,2026-05-13T16:30:00,30,132.55,pending,no_show,3,48,whatsapp
+APT-0120,CLI-075,Marina Santos,Bruno Costa,Limpeza de pele,2026-05-13T09:30:00,90,185.82,confirmed,attended,2,72,email
+APT-0121,CLI-041,Lucas Almeida,Bruno Costa,Consulta estética,2026-05-13T11:00:00,30,124.81,pending,attended,0,96,email
+APT-0122,CLI-012,Patricia Rodrigues,Bruno Costa,Limpeza de pele,2026-05-13T12:30:00,90,196.03,confirmed,cancelled,0,120,email
+APT-0123,CLI-031,Larissa Martins,Bruno Costa,Limpeza de pele,2026-05-13T14:00:00,90,166.64,confirmed,attended,0,6,email
+APT-0124,CLI-053,Thiago Pereira,Bruno Costa,Consulta estética,2026-05-13T16:30:00,30,125.6,confirmed,attended,2,24,whatsapp
+APT-0125,CLI-037,Natalia Souza,Camila Dias,Limpeza de pele,2026-05-13T09:00:00,90,199.49,confirmed,attended,1,72,manual
+APT-0126,CLI-076,Pedro Oliveira,Camila Dias,Limpeza de pele,2026-05-13T11:00:00,90,189.43,pending,cancelled,0,6,email
+APT-0127,CLI-036,Isabela Almeida,Camila Dias,Massagem,2026-05-13T13:30:00,50,168.9,confirmed,no_show,1,12,manual
+APT-0128,CLI-046,Natalia Lima,Camila Dias,Depilação laser,2026-05-13T15:30:00,40,211.69,pending,no_show,2,6,whatsapp
+APT-0129,CLI-053,Thiago Pereira,Camila Dias,Preenchimento,2026-05-13T16:30:00,60,907.85,confirmed,attended,1,96,manual
+APT-0130,CLI-015,Marina Almeida,Ana Ribeiro,Preenchimento,2026-05-14T09:30:00,60,874.52,confirmed,no_show,1,6,email
+APT-0131,CLI-050,Carolina Almeida,Ana Ribeiro,Massagem,2026-05-14T11:30:00,50,177.52,declined,no_show,0,6,email
+APT-0132,CLI-065,Felipe Santos,Ana Ribeiro,Consulta estética,2026-05-14T13:00:00,30,131.29,confirmed,attended,1,36,manual
+APT-0133,CLI-037,Diego Pereira,Ana Ribeiro,Preenchimento,2026-05-14T14:30:00,60,956.97,confirmed,cancelled,1,12,email
+APT-0134,CLI-064,Beatriz Souza,Ana Ribeiro,Consulta estética,2026-05-14T16:30:00,30,128.62,pending,no_show,2,36,whatsapp
+APT-0135,CLI-043,Henrique Ferreira,Bruno Costa,Botox,2026-05-14T09:00:00,45,726.25,pending,attended,0,120,email
+APT-0136,CLI-043,Amanda Oliveira,Bruno Costa,Consulta estética,2026-05-14T10:30:00,30,118.85,pending,attended,0,120,whatsapp
+APT-0137,CLI-072,Isabela Ferreira,Bruno Costa,Preenchimento,2026-05-14T11:30:00,60,928.27,confirmed,attended,0,48,manual
+APT-0138,CLI-015,Isabela Martins,Bruno Costa,Depilação laser,2026-05-14T13:00:00,40,216.55,pending,attended,2,6,email
+APT-0139,CLI-020,Beatriz Silva,Bruno Costa,Massagem,2026-05-14T14:30:00,50,167.88,declined,no_show,1,72,whatsapp
+APT-0140,CLI-072,Isabela Ferreira,Camila Dias,Botox,2026-05-14T09:00:00,45,698.68,confirmed,attended,0,24,manual
+APT-0141,CLI-050,Pedro Pereira,Camila Dias,Massagem,2026-05-14T10:30:00,50,176.2,confirmed,attended,1,96,whatsapp
+APT-0142,CLI-052,Marina Martins,Camila Dias,Preenchimento,2026-05-14T12:30:00,60,841.75,pending,attended,4,72,manual
+APT-0143,CLI-045,Thiago Rodrigues,Camila Dias,Limpeza de pele,2026-05-14T14:00:00,90,192.2,pending,attended,1,72,manual
+APT-0144,CLI-015,Marina Almeida,Camila Dias,Massagem,2026-05-14T16:00:00,50,171.72,pending,attended,2,72,whatsapp
+APT-0145,CLI-011,Beatriz Oliveira,Ana Ribeiro,Botox,2026-05-15T09:30:00,45,666.45,pending,attended,2,12,manual
+APT-0146,CLI-073,Eduardo Oliveira,Ana Ribeiro,Preenchimento,2026-05-15T10:00:00,60,979.47,confirmed,attended,0,24,manual
+APT-0147,CLI-029,Pedro Almeida,Ana Ribeiro,Depilação laser,2026-05-15T12:00:00,40,236.89,declined,attended,1,36,whatsapp
+APT-0148,CLI-066,Diego Lima,Ana Ribeiro,Massagem,2026-05-15T13:00:00,50,161.97,confirmed,attended,1,36,email
+APT-0149,CLI-024,Natalia Rodrigues,Ana Ribeiro,Depilação laser,2026-05-15T15:00:00,40,213.4,pending,no_show,0,36,manual
+APT-0150,CLI-068,Felipe Rodrigues,Bruno Costa,Depilação laser,2026-05-15T09:00:00,40,242.23,confirmed,attended,0,12,whatsapp
+APT-0151,CLI-010,Marina Souza,Bruno Costa,Depilação laser,2026-05-15T10:00:00,40,219.39,confirmed,attended,0,6,whatsapp
+APT-0152,CLI-073,Diego Silva,Bruno Costa,Preenchimento,2026-05-15T11:00:00,60,869.86,pending,no_show,0,72,email
+APT-0153,CLI-074,Beatriz Ferreira,Bruno Costa,Consulta estética,2026-05-15T13:00:00,30,113.99,confirmed,cancelled,1,12,manual
+APT-0154,CLI-056,Natalia Almeida,Bruno Costa,Massagem,2026-05-15T14:00:00,50,160.63,confirmed,no_show,0,36,manual
+APT-0155,CLI-075,Marina Santos,Camila Dias,Depilação laser,2026-05-15T09:00:00,40,215.22,confirmed,attended,2,6,whatsapp
+APT-0156,CLI-064,Felipe Souza,Camila Dias,Massagem,2026-05-15T10:00:00,50,177.71,pending,no_show,3,12,manual
+APT-0157,CLI-024,Natalia Rodrigues,Camila Dias,Massagem,2026-05-15T12:00:00,50,171.11,confirmed,attended,1,120,email
+APT-0158,CLI-064,Felipe Souza,Camila Dias,Limpeza de pele,2026-05-15T14:00:00,90,167.2,confirmed,attended,4,12,manual
+APT-0159,CLI-076,Rafael Ferreira,Camila Dias,Preenchimento,2026-05-15T16:00:00,60,956.96,pending,no_show,0,24,email
+APT-0160,CLI-062,Thiago Souza,Ana Ribeiro,Limpeza de pele,2026-05-16T09:00:00,90,179.94,pending,no_show,3,6,manual
+APT-0161,CLI-028,Larissa Silva,Ana Ribeiro,Depilação laser,2026-05-16T11:30:00,40,231.25,declined,no_show,3,72,email
+APT-0162,CLI-055,Felipe Almeida,Ana Ribeiro,Limpeza de pele,2026-05-16T12:00:00,90,190.51,confirmed,cancelled,0,96,email
+APT-0163,CLI-028,Larissa Santos,Bruno Costa,Massagem,2026-05-16T09:00:00,50,157.48,confirmed,attended,4,96,whatsapp
+APT-0164,CLI-076,Thiago Lima,Bruno Costa,Preenchimento,2026-05-16T11:00:00,60,948.17,confirmed,attended,1,96,email
+APT-0165,CLI-057,Gustavo Lima,Bruno Costa,Massagem,2026-05-16T13:00:00,50,172.84,confirmed,attended,1,6,manual
+APT-0166,CLI-015,Julia Oliveira,Camila Dias,Botox,2026-05-16T09:00:00,45,699.21,pending,no_show,2,120,email
+APT-0167,CLI-050,Carolina Martins,Camila Dias,Preenchimento,2026-05-16T10:00:00,60,954.63,declined,no_show,1,120,manual
+APT-0168,CLI-074,Natalia Pereira,Camila Dias,Botox,2026-05-16T12:30:00,45,693.64,confirmed,no_show,1,48,email
+APT-0169,CLI-071,Carolina Rodrigues,Ana Ribeiro,Massagem,2026-05-18T09:30:00,50,166.78,pending,no_show,1,48,manual
+APT-0170,CLI-076,Sofia Santos,Ana Ribeiro,Depilação laser,2026-05-18T11:00:00,40,238.06,confirmed,attended,1,120,email
+APT-0171,CLI-065,Felipe Santos,Ana Ribeiro,Consulta estética,2026-05-18T12:00:00,30,125.7,pending,attended,0,48,email
+APT-0172,CLI-047,Diego Santos,Ana Ribeiro,Massagem,2026-05-18T13:00:00,50,164.93,confirmed,no_show,2,36,email
+APT-0173,CLI-020,Rodrigo Oliveira,Ana Ribeiro,Depilação laser,2026-05-18T15:00:00,40,225.53,pending,attended,2,12,email
+APT-0174,CLI-013,Marina Oliveira,Bruno Costa,Massagem,2026-05-18T09:00:00,50,173.73,confirmed,attended,0,120,manual
+APT-0175,CLI-029,Patricia Oliveira,Bruno Costa,Consulta estética,2026-05-18T11:00:00,30,114.29,pending,attended,1,6,manual
+APT-0176,CLI-068,Felipe Rodrigues,Bruno Costa,Botox,2026-05-18T12:00:00,45,679.25,confirmed,attended,0,48,manual
+APT-0177,CLI-028,Marina Rodrigues,Bruno Costa,Massagem,2026-05-18T13:30:00,50,176.06,pending,cancelled,4,24,email
+APT-0178,CLI-053,Pedro Silva,Bruno Costa,Massagem,2026-05-18T15:30:00,50,167.65,pending,attended,1,48,email
+APT-0179,CLI-032,Rodrigo Lima,Camila Dias,Consulta estética,2026-05-18T09:00:00,30,121.29,pending,attended,2,120,manual
+APT-0180,CLI-076,Rafael Ferreira,Camila Dias,Limpeza de pele,2026-05-18T10:00:00,90,196.61,confirmed,no_show,1,36,email
+APT-0181,CLI-055,Felipe Almeida,Camila Dias,Consulta estética,2026-05-18T12:00:00,30,116.35,confirmed,attended,0,12,whatsapp
+APT-0182,CLI-051,Thiago Almeida,Camila Dias,Limpeza de pele,2026-05-18T13:00:00,90,172.43,pending,attended,1,24,whatsapp
+APT-0183,CLI-021,Natalia Ferreira,Camila Dias,Depilação laser,2026-05-18T15:00:00,40,244.93,confirmed,attended,0,120,whatsapp
+APT-0184,CLI-061,Felipe Silva,Ana Ribeiro,Massagem,2026-05-19T09:30:00,50,150.64,confirmed,no_show,0,120,whatsapp
+APT-0185,CLI-055,Felipe Almeida,Ana Ribeiro,Preenchimento,2026-05-19T11:30:00,60,831.89,confirmed,attended,0,6,manual
+APT-0186,CLI-032,Rodrigo Lima,Ana Ribeiro,Depilação laser,2026-05-19T13:00:00,40,218.82,pending,no_show,2,12,email
+APT-0187,CLI-080,Felipe Oliveira,Ana Ribeiro,Massagem,2026-05-19T14:00:00,50,151.59,confirmed,no_show,0,96,email
+APT-0188,CLI-021,Natalia Ferreira,Ana Ribeiro,Depilação laser,2026-05-19T16:00:00,40,245.99,confirmed,attended,0,24,manual
+APT-0189,CLI-004,Patricia Pereira,Bruno Costa,Preenchimento,2026-05-19T09:00:00,60,964.0,confirmed,no_show,4,120,email
+APT-0190,CLI-041,Lucas Almeida,Bruno Costa,Preenchimento,2026-05-19T11:30:00,60,991.83,confirmed,attended,0,6,manual
+APT-0191,CLI-073,Diego Silva,Bruno Costa,Massagem,2026-05-19T13:00:00,50,177.54,confirmed,attended,1,96,whatsapp
+APT-0192,CLI-025,Julia Ferreira,Bruno Costa,Botox,2026-05-19T15:00:00,45,717.67,pending,attended,1,96,manual
+APT-0193,CLI-076,Pedro Oliveira,Bruno Costa,Consulta estética,2026-05-19T16:30:00,30,119.44,declined,cancelled,2,72,whatsapp
+APT-0194,CLI-024,Rodrigo Pereira,Camila Dias,Depilação laser,2026-05-19T09:00:00,40,213.25,confirmed,cancelled,1,48,manual
+APT-0195,CLI-066,Diego Lima,Camila Dias,Preenchimento,2026-05-19T10:00:00,60,960.38,confirmed,attended,1,120,email
+APT-0196,CLI-035,Lucas Martins,Camila Dias,Preenchimento,2026-05-19T12:00:00,60,870.5,confirmed,attended,3,96,email
+APT-0197,CLI-033,Marina Pereira,Camila Dias,Consulta estética,2026-05-19T14:00:00,30,123.89,confirmed,attended,1,120,email
+APT-0198,CLI-035,Lucas Martins,Camila Dias,Botox,2026-05-19T15:00:00,45,628.27,pending,attended,3,36,whatsapp
+APT-0199,CLI-063,Amanda Ferreira,Ana Ribeiro,Depilação laser,2026-05-20T09:00:00,40,220.3,pending,attended,2,24,email
+APT-0200,CLI-020,Sofia Lima,Ana Ribeiro,Depilação laser,2026-05-20T10:30:00,40,227.66,declined,no_show,2,6,manual
+APT-0201,CLI-076,Pedro Oliveira,Ana Ribeiro,Consulta estética,2026-05-20T11:00:00,30,130.47,declined,no_show,2,24,email
+APT-0202,CLI-041,Thiago Silva,Ana Ribeiro,Botox,2026-05-20T12:30:00,45,657.07,declined,cancelled,0,12,manual
+APT-0203,CLI-021,Natalia Ferreira,Ana Ribeiro,Massagem,2026-05-20T13:00:00,50,170.6,confirmed,attended,0,120,manual
+APT-0204,CLI-072,Rafael Silva,Bruno Costa,Preenchimento,2026-05-20T09:30:00,60,971.19,confirmed,attended,0,48,email
+APT-0205,CLI-074,Natalia Pereira,Bruno Costa,Depilação laser,2026-05-20T11:00:00,40,216.64,pending,no_show,2,12,whatsapp
+APT-0206,CLI-062,Larissa Almeida,Bruno Costa,Limpeza de pele,2026-05-20T12:00:00,90,191.62,declined,no_show,4,48,whatsapp
+APT-0207,CLI-064,Felipe Souza,Bruno Costa,Preenchimento,2026-05-20T14:00:00,60,908.25,pending,no_show,4,120,manual
+APT-0208,CLI-011,Lucas Lima,Bruno Costa,Preenchimento,2026-05-20T16:00:00,60,899.79,declined,cancelled,2,36,manual
+APT-0209,CLI-023,Gustavo Rodrigues,Camila Dias,Preenchimento,2026-05-20T09:00:00,60,958.95,pending,attended,1,36,manual
+APT-0210,CLI-074,Natalia Pereira,Camila Dias,Depilação laser,2026-05-20T11:00:00,40,224.64,pending,cancelled,3,12,manual
+APT-0211,CLI-011,Beatriz Oliveira,Camila Dias,Massagem,2026-05-20T12:00:00,50,165.86,pending,no_show,2,120,whatsapp
+APT-0212,CLI-078,Isabela Silva,Camila Dias,Massagem,2026-05-20T14:30:00,50,162.0,confirmed,no_show,1,96,email
+APT-0213,CLI-005,Julia Almeida,Camila Dias,Consulta estética,2026-05-20T16:00:00,30,118.67,confirmed,no_show,0,36,whatsapp
+APT-0214,CLI-016,Pedro Santos,Ana Ribeiro,Massagem,2026-05-21T09:30:00,50,167.73,confirmed,no_show,1,96,manual
+APT-0215,CLI-005,Gustavo Pereira,Ana Ribeiro,Consulta estética,2026-05-21T11:00:00,30,123.34,confirmed,attended,1,96,manual
+APT-0216,CLI-005,Lucas Oliveira,Ana Ribeiro,Preenchimento,2026-05-21T12:00:00,60,819.42,pending,no_show,1,24,whatsapp
+APT-0217,CLI-039,Isabela Rodrigues,Ana Ribeiro,Preenchimento,2026-05-21T14:00:00,60,985.66,confirmed,attended,1,36,manual
+APT-0218,CLI-029,Pedro Almeida,Ana Ribeiro,Limpeza de pele,2026-05-21T16:00:00,90,186.98,confirmed,no_show,1,6,email
+APT-0219,CLI-057,Pedro Souza,Bruno Costa,Massagem,2026-05-21T09:30:00,50,174.84,confirmed,cancelled,1,120,whatsapp
+APT-0220,CLI-046,Natalia Lima,Bruno Costa,Botox,2026-05-21T11:00:00,45,628.8,confirmed,attended,3,72,whatsapp
+APT-0221,CLI-037,Natalia Souza,Bruno Costa,Consulta estética,2026-05-21T12:30:00,30,114.6,confirmed,attended,1,6,manual
+APT-0222,CLI-072,Rodrigo Ferreira,Bruno Costa,Depilação laser,2026-05-21T13:00:00,40,208.97,pending,attended,0,96,email
+APT-0223,CLI-072,Rodrigo Ferreira,Bruno Costa,Botox,2026-05-21T14:00:00,45,658.19,pending,no_show,0,48,whatsapp
+APT-0224,CLI-048,Gustavo Almeida,Camila Dias,Massagem,2026-05-21T09:00:00,50,167.89,pending,no_show,2,96,email
+APT-0225,CLI-028,Marina Rodrigues,Camila Dias,Preenchimento,2026-05-21T11:00:00,60,974.3,pending,attended,4,6,whatsapp
+APT-0226,CLI-025,Rodrigo Souza,Camila Dias,Massagem,2026-05-21T13:30:00,50,153.28,confirmed,attended,1,72,manual
+APT-0227,CLI-015,Henrique Souza,Camila Dias,Limpeza de pele,2026-05-21T15:00:00,90,177.18,pending,no_show,3,36,email
+APT-0228,CLI-039,Isabela Rodrigues,Camila Dias,Depilação laser,2026-05-21T17:00:00,40,237.72,confirmed,attended,0,48,manual
+APT-0229,CLI-031,Amanda Souza,Ana Ribeiro,Depilação laser,2026-05-22T09:30:00,40,213.87,confirmed,attended,0,6,manual
+APT-0230,CLI-057,Gustavo Lima,Ana Ribeiro,Massagem,2026-05-22T10:30:00,50,168.15,confirmed,attended,1,36,manual
+APT-0231,CLI-017,Larissa Ferreira,Ana Ribeiro,Preenchimento,2026-05-22T12:00:00,60,843.71,confirmed,attended,0,120,manual
+APT-0232,CLI-064,Rafael Rodrigues,Ana Ribeiro,Depilação laser,2026-05-22T14:00:00,40,238.39,confirmed,no_show,5,6,whatsapp
+APT-0233,CLI-044,Gustavo Oliveira,Ana Ribeiro,Limpeza de pele,2026-05-22T15:30:00,90,187.84,confirmed,attended,0,24,manual
+APT-0234,CLI-043,Henrique Ferreira,Bruno Costa,Massagem,2026-05-22T09:30:00,50,178.48,confirmed,attended,0,96,whatsapp
+APT-0235,CLI-044,Gustavo Oliveira,Bruno Costa,Massagem,2026-05-22T11:00:00,50,158.54,confirmed,attended,0,24,email
+APT-0236,CLI-055,Felipe Almeida,Bruno Costa,Limpeza de pele,2026-05-22T13:00:00,90,201.3,confirmed,attended,0,36,manual
+APT-0237,CLI-015,Marina Almeida,Bruno Costa,Limpeza de pele,2026-05-22T15:00:00,90,171.77,pending,no_show,4,120,email
+APT-0238,CLI-054,Amanda Martins,Bruno Costa,Depilação laser,2026-05-22T17:00:00,40,227.34,confirmed,attended,0,6,email
+APT-0239,CLI-011,Marina Lima,Camila Dias,Limpeza de pele,2026-05-22T09:00:00,90,173.06,pending,attended,3,6,whatsapp
+APT-0240,CLI-071,Carolina Santos,Camila Dias,Consulta estética,2026-05-22T11:30:00,30,123.37,confirmed,attended,2,36,email
+APT-0241,CLI-046,Beatriz Santos,Camila Dias,Consulta estética,2026-05-22T12:00:00,30,130.53,pending,no_show,3,72,email
+APT-0242,CLI-063,Eduardo Martins,Camila Dias,Massagem,2026-05-22T13:00:00,50,178.96,pending,no_show,2,72,email
+APT-0243,CLI-068,Felipe Rodrigues,Camila Dias,Botox,2026-05-22T15:00:00,45,690.7,confirmed,attended,0,96,whatsapp
+APT-0244,CLI-003,Beatriz Almeida,Ana Ribeiro,Preenchimento,2026-05-23T09:00:00,60,819.72,pending,attended,0,24,email
+APT-0245,CLI-045,Felipe Lima,Ana Ribeiro,Depilação laser,2026-05-23T11:30:00,40,206.94,confirmed,attended,1,24,whatsapp
+APT-0246,CLI-014,Rodrigo Santos,Ana Ribeiro,Preenchimento,2026-05-23T12:00:00,60,892.46,declined,no_show,2,72,whatsapp
+APT-0247,CLI-025,Rodrigo Souza,Bruno Costa,Consulta estética,2026-05-23T09:00:00,30,113.9,confirmed,attended,0,96,whatsapp
+APT-0248,CLI-062,Larissa Almeida,Bruno Costa,Depilação laser,2026-05-23T10:00:00,40,224.22,pending,attended,5,12,manual
+APT-0249,CLI-009,Isabela Santos,Bruno Costa,Botox,2026-05-23T11:30:00,45,640.84,confirmed,attended,1,96,email
+APT-0250,CLI-073,Eduardo Oliveira,Camila Dias,Depilação laser,2026-05-23T09:30:00,40,219.92,confirmed,cancelled,0,36,email
+APT-0251,CLI-044,Henrique Martins,Camila Dias,Preenchimento,2026-05-23T10:30:00,60,919.17,pending,attended,0,48,manual
+APT-0252,CLI-064,Rafael Rodrigues,Camila Dias,Massagem,2026-05-23T12:00:00,50,172.73,declined,no_show,6,120,manual
+APT-0253,CLI-043,Gustavo Ferreira,Ana Ribeiro,Limpeza de pele,2026-05-25T09:00:00,90,180.83,confirmed,cancelled,0,36,email
+APT-0254,CLI-015,Isabela Martins,Ana Ribeiro,Limpeza de pele,2026-05-25T11:00:00,90,178.54,pending,scheduled,5,96,manual
+APT-0255,CLI-075,Marina Santos,Ana Ribeiro,Massagem,2026-05-25T13:00:00,50,165.22,pending,scheduled,2,72,manual
+APT-0256,CLI-055,Carolina Pereira,Ana Ribeiro,Consulta estética,2026-05-25T15:30:00,30,122.85,confirmed,scheduled,0,12,manual
+APT-0257,CLI-043,Patricia Souza,Ana Ribeiro,Consulta estética,2026-05-25T16:00:00,30,122.41,pending,scheduled,0,120,email
+APT-0258,CLI-077,Henrique Santos,Bruno Costa,Limpeza de pele,2026-05-25T09:00:00,90,170.7,pending,scheduled,3,12,email
+APT-0259,CLI-047,Isabela Souza,Bruno Costa,Preenchimento,2026-05-25T11:00:00,60,899.34,pending,scheduled,3,120,whatsapp
+APT-0260,CLI-016,Pedro Santos,Bruno Costa,Preenchimento,2026-05-25T13:00:00,60,993.93,confirmed,no_show,2,12,whatsapp
+APT-0261,CLI-064,Rafael Rodrigues,Bruno Costa,Massagem,2026-05-25T15:30:00,50,160.16,declined,no_show,7,96,whatsapp
+APT-0262,CLI-048,Gustavo Almeida,Bruno Costa,Botox,2026-05-25T17:00:00,45,598.58,pending,no_show,3,36,whatsapp
+APT-0263,CLI-028,Larissa Santos,Camila Dias,Botox,2026-05-25T09:30:00,45,612.81,pending,no_show,4,24,manual
+APT-0264,CLI-074,Natalia Pereira,Camila Dias,Depilação laser,2026-05-25T10:00:00,40,239.6,confirmed,no_show,3,96,manual
+APT-0265,CLI-044,Thiago Martins,Camila Dias,Botox,2026-05-25T11:30:00,45,613.2,confirmed,scheduled,0,24,email
+APT-0266,CLI-049,Beatriz Rodrigues,Camila Dias,Consulta estética,2026-05-25T12:00:00,30,122.08,confirmed,scheduled,0,24,manual
+APT-0267,CLI-064,Rafael Rodrigues,Camila Dias,Consulta estética,2026-05-25T13:00:00,30,125.27,pending,no_show,8,24,email
+APT-0268,CLI-039,Henrique Oliveira,Ana Ribeiro,Limpeza de pele,2026-05-26T09:00:00,90,191.17,confirmed,scheduled,0,120,email
+APT-0269,CLI-030,Rafael Santos,Ana Ribeiro,Depilação laser,2026-05-26T11:30:00,40,226.05,pending,no_show,3,36,whatsapp
+APT-0270,CLI-021,Patricia Ferreira,Ana Ribeiro,Depilação laser,2026-05-26T12:00:00,40,246.0,confirmed,scheduled,0,12,manual
+APT-0271,CLI-039,Isabela Rodrigues,Ana Ribeiro,Limpeza de pele,2026-05-26T13:00:00,90,174.51,pending,scheduled,0,12,whatsapp
+APT-0272,CLI-063,Larissa Pereira,Ana Ribeiro,Depilação laser,2026-05-26T15:00:00,40,238.07,confirmed,no_show,3,12,manual
+APT-0273,CLI-015,Felipe Martins,Bruno Costa,Consulta estética,2026-05-26T09:00:00,30,129.73,confirmed,scheduled,5,24,manual
+APT-0274,CLI-032,Rodrigo Lima,Bruno Costa,Preenchimento,2026-05-26T10:00:00,60,920.75,declined,no_show,3,72,manual
+APT-0275,CLI-005,Lucas Oliveira,Bruno Costa,Consulta estética,2026-05-26T12:00:00,30,131.19,declined,no_show,2,48,whatsapp
+APT-0276,CLI-031,Amanda Souza,Bruno Costa,Botox,2026-05-26T13:00:00,45,651.85,confirmed,scheduled,0,24,email
+APT-0277,CLI-015,Marina Almeida,Bruno Costa,Limpeza de pele,2026-05-26T14:00:00,90,186.55,pending,no_show,5,72,manual
+APT-0278,CLI-023,Isabela Pereira,Camila Dias,Limpeza de pele,2026-05-26T09:00:00,90,173.23,confirmed,scheduled,1,96,email
+APT-0279,CLI-053,Thiago Pereira,Camila Dias,Preenchimento,2026-05-26T11:00:00,60,954.48,pending,scheduled,1,120,whatsapp
+APT-0280,CLI-078,Isabela Silva,Camila Dias,Limpeza de pele,2026-05-26T13:00:00,90,200.09,pending,no_show,2,24,whatsapp
+APT-0281,CLI-065,Beatriz Lima,Camila Dias,Consulta estética,2026-05-26T15:00:00,30,112.38,confirmed,scheduled,0,48,manual
+APT-0282,CLI-072,Rafael Silva,Camila Dias,Consulta estética,2026-05-26T16:00:00,30,112.68,confirmed,no_show,1,36,whatsapp
+APT-0283,CLI-013,Marina Oliveira,Ana Ribeiro,Depilação laser,2026-05-27T09:30:00,40,238.35,confirmed,scheduled,0,120,email
+APT-0284,CLI-074,Beatriz Ferreira,Ana Ribeiro,Consulta estética,2026-05-27T10:30:00,30,117.92,confirmed,no_show,4,12,email
+APT-0285,CLI-016,Carolina Oliveira,Ana Ribeiro,Botox,2026-05-27T11:00:00,45,677.34,pending,scheduled,3,24,whatsapp
+APT-0286,CLI-064,Felipe Souza,Ana Ribeiro,Depilação laser,2026-05-27T12:00:00,40,211.96,confirmed,no_show,9,96,whatsapp
+APT-0287,CLI-035,Lucas Martins,Ana Ribeiro,Botox,2026-05-27T13:00:00,45,634.01,pending,no_show,2,96,whatsapp
+APT-0288,CLI-026,Rodrigo Martins,Bruno Costa,Botox,2026-05-27T09:00:00,45,708.23,confirmed,scheduled,2,48,manual
+APT-0289,CLI-005,Sofia Rodrigues,Bruno Costa,Preenchimento,2026-05-27T10:00:00,60,978.63,pending,no_show,3,96,whatsapp
+APT-0290,CLI-071,Carolina Santos,Bruno Costa,Depilação laser,2026-05-27T12:00:00,40,245.82,pending,scheduled,2,12,email
+APT-0291,CLI-050,Carolina Martins,Bruno Costa,Botox,2026-05-27T13:00:00,45,698.15,confirmed,scheduled,2,24,whatsapp
+APT-0292,CLI-049,Marina Silva,Bruno Costa,Massagem,2026-05-27T14:30:00,50,156.37,declined,scheduled,0,6,manual
+APT-0293,CLI-048,Gustavo Almeida,Camila Dias,Massagem,2026-05-27T09:00:00,50,163.56,pending,no_show,4,24,whatsapp
+APT-0294,CLI-024,Rodrigo Pereira,Camila Dias,Botox,2026-05-27T11:00:00,45,721.95,confirmed,scheduled,1,12,whatsapp
+APT-0295,CLI-047,Diego Santos,Camila Dias,Limpeza de pele,2026-05-27T12:30:00,90,192.26,pending,scheduled,3,6,whatsapp
+APT-0296,CLI-020,Beatriz Silva,Camila Dias,Limpeza de pele,2026-05-27T14:00:00,90,191.55,pending,scheduled,3,72,whatsapp
+APT-0297,CLI-065,Beatriz Lima,Camila Dias,Preenchimento,2026-05-27T16:00:00,60,912.05,confirmed,scheduled,0,6,email
+APT-0298,CLI-076,Patricia Santos,Ana Ribeiro,Consulta estética,2026-05-28T09:00:00,30,114.41,pending,scheduled,3,72,whatsapp
+APT-0299,CLI-035,Lucas Martins,Ana Ribeiro,Preenchimento,2026-05-28T10:00:00,60,971.65,confirmed,no_show,3,36,whatsapp
+APT-0300,CLI-012,Pedro Ferreira,Ana Ribeiro,Botox,2026-05-28T12:00:00,45,602.6,confirmed,scheduled,0,24,manual
+APT-0301,CLI-038,Gustavo Souza,Ana Ribeiro,Consulta estética,2026-05-28T13:30:00,30,119.35,pending,no_show,2,72,manual
+APT-0302,CLI-076,Pedro Oliveira,Ana Ribeiro,Consulta estética,2026-05-28T14:00:00,30,121.56,declined,no_show,3,6,email
+APT-0303,CLI-014,Amanda Santos,Bruno Costa,Preenchimento,2026-05-28T09:00:00,60,872.9,pending,scheduled,3,72,manual
+APT-0304,CLI-023,Isabela Pereira,Bruno Costa,Botox,2026-05-28T11:00:00,45,701.48,pending,scheduled,1,36,whatsapp
+APT-0305,CLI-027,Gustavo Silva,Bruno Costa,Limpeza de pele,2026-05-28T12:00:00,90,189.26,declined,no_show,0,6,manual
+APT-0306,CLI-011,Thiago Santos,Bruno Costa,Consulta estética,2026-05-28T14:00:00,30,133.74,pending,scheduled,2,36,whatsapp
+APT-0307,CLI-028,Larissa Santos,Bruno Costa,Consulta estética,2026-05-28T15:00:00,30,133.79,confirmed,no_show,5,96,whatsapp
+APT-0308,CLI-069,Lucas Rodrigues,Camila Dias,Massagem,2026-05-28T09:00:00,50,161.12,confirmed,scheduled,0,96,whatsapp
+APT-0309,CLI-076,Thiago Lima,Camila Dias,Botox,2026-05-28T11:00:00,45,639.35,confirmed,scheduled,4,96,email
+APT-0310,CLI-010,Marina Souza,Camila Dias,Botox,2026-05-28T12:00:00,45,658.59,confirmed,scheduled,0,12,email
+APT-0311,CLI-024,Rodrigo Pereira,Camila Dias,Limpeza de pele,2026-05-28T13:00:00,90,171.27,confirmed,no_show,1,120,manual
+APT-0312,CLI-077,Eduardo Silva,Camila Dias,Preenchimento,2026-05-28T15:00:00,60,991.18,pending,scheduled,3,72,email
+APT-0313,CLI-042,Pedro Lima,Ana Ribeiro,Massagem,2026-05-29T09:00:00,50,161.67,confirmed,scheduled,1,24,manual
+APT-0314,CLI-047,Diego Santos,Ana Ribeiro,Massagem,2026-05-29T11:30:00,50,172.19,pending,no_show,3,24,whatsapp
+APT-0315,CLI-021,Sofia Almeida,Ana Ribeiro,Botox,2026-05-29T13:00:00,45,703.66,confirmed,scheduled,0,12,whatsapp
+APT-0316,CLI-027,Sofia Ferreira,Ana Ribeiro,Limpeza de pele,2026-05-29T14:30:00,90,167.42,confirmed,scheduled,1,72,manual
+APT-0317,CLI-027,Carolina Ferreira,Ana Ribeiro,Depilação laser,2026-05-29T16:00:00,40,210.63,confirmed,cancelled,1,96,email
+APT-0318,CLI-020,Beatriz Silva,Bruno Costa,Depilação laser,2026-05-29T09:00:00,40,241.24,confirmed,scheduled,3,36,email
+APT-0319,CLI-011,Marina Lima,Bruno Costa,Limpeza de pele,2026-05-29T10:30:00,90,174.57,confirmed,scheduled,2,36,manual
+APT-0320,CLI-055,Carolina Pereira,Bruno Costa,Limpeza de pele,2026-05-29T12:00:00,90,177.18,confirmed,scheduled,0,120,email
+APT-0321,CLI-026,Julia Pereira,Bruno Costa,Botox,2026-05-29T14:30:00,45,666.83,pending,scheduled,2,48,manual
+APT-0322,CLI-030,Rafael Santos,Bruno Costa,Botox,2026-05-29T15:00:00,45,693.82,pending,scheduled,4,48,whatsapp
+APT-0323,CLI-055,Carolina Pereira,Camila Dias,Massagem,2026-05-29T09:30:00,50,176.45,pending,scheduled,0,72,whatsapp
+APT-0324,CLI-015,Felipe Martins,Camila Dias,Consulta estética,2026-05-29T11:30:00,30,133.69,confirmed,scheduled,6,36,manual
+APT-0325,CLI-076,Rafael Ferreira,Camila Dias,Preenchimento,2026-05-29T12:30:00,60,903.88,confirmed,no_show,4,36,email
+APT-0326,CLI-057,Sofia Oliveira,Camila Dias,Massagem,2026-05-29T14:00:00,50,169.75,confirmed,no_show,1,72,whatsapp
+APT-0327,CLI-074,Natalia Pereira,Camila Dias,Limpeza de pele,2026-05-29T16:00:00,90,177.21,confirmed,no_show,5,96,whatsapp
+APT-0328,CLI-043,Gustavo Ferreira,Ana Ribeiro,Consulta estética,2026-05-30T09:30:00,30,114.61,confirmed,scheduled,0,72,email
+APT-0329,CLI-039,Thiago Oliveira,Ana Ribeiro,Consulta estética,2026-05-30T10:00:00,30,124.02,pending,scheduled,0,96,whatsapp
+APT-0330,CLI-054,Amanda Martins,Ana Ribeiro,Massagem,2026-05-30T11:00:00,50,171.05,declined,no_show,0,12,whatsapp
+APT-0331,CLI-043,Amanda Oliveira,Bruno Costa,Preenchimento,2026-05-30T09:00:00,60,948.61,pending,scheduled,0,12,email
+APT-0332,CLI-019,Julia Lima,Bruno Costa,Depilação laser,2026-05-30T11:30:00,40,234.1,confirmed,scheduled,0,12,whatsapp
+APT-0333,CLI-036,Isabela Almeida,Bruno Costa,Depilação laser,2026-05-30T12:00:00,40,218.92,declined,no_show,2,120,email
+APT-0334,CLI-031,Diego Oliveira,Camila Dias,Massagem,2026-05-30T09:30:00,50,177.65,confirmed,scheduled,0,6,whatsapp
+APT-0335,CLI-032,Rafael Almeida,Camila Dias,Preenchimento,2026-05-30T11:00:00,60,977.79,pending,scheduled,4,12,manual
+APT-0336,CLI-044,Gustavo Oliveira,Camila Dias,Limpeza de pele,2026-05-30T13:00:00,90,200.68,confirmed,scheduled,0,24,email
