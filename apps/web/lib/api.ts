@@ -12,29 +12,54 @@ import type {
   RiskBoardResponse,
 } from "@/types";
 
-let cached: Awaited<ReturnType<typeof loadAppointments>> | null = null;
+let cachedRows: Awaited<ReturnType<typeof loadAppointments>> | null = null;
+let cachedBundle:
+  | {
+      demo: DemoSummary;
+      dashboard: DashboardResponse;
+      risk: RiskBoardResponse;
+      actions: ActionsResponse;
+    }
+  | null = null;
 
 async function rows() {
-  if (!cached) cached = await loadAppointments();
-  return cached;
+  if (!cachedRows) cachedRows = await loadAppointments();
+  return cachedRows;
+}
+
+async function bundle() {
+  if (!cachedBundle) {
+    const data = await rows();
+    const dashboard = buildDashboard(data);
+    const risk = buildRiskBoard(data);
+    cachedBundle = {
+      demo: summarizeDemo(data),
+      dashboard,
+      risk,
+      actions: buildActions(dashboard, risk),
+    };
+  }
+  return cachedBundle;
 }
 
 /** Client-side lab API — no remote Python required for the live demo. */
 export async function fetchDemo(): Promise<DemoSummary> {
-  return summarizeDemo(await rows());
+  return (await bundle()).demo;
 }
 
 export async function fetchDashboard(): Promise<DashboardResponse> {
-  return buildDashboard(await rows());
+  return (await bundle()).dashboard;
 }
 
 export async function fetchRiskBoard(): Promise<RiskBoardResponse> {
-  return buildRiskBoard(await rows());
+  return (await bundle()).risk;
 }
 
 export async function fetchActions(): Promise<ActionsResponse> {
-  const data = await rows();
-  const dash = buildDashboard(data);
-  const risk = buildRiskBoard(data);
-  return buildActions(dash, risk);
+  return (await bundle()).actions;
+}
+
+/** Load all cockpit slices once (preferred for the homepage). */
+export async function fetchCockpit() {
+  return bundle();
 }

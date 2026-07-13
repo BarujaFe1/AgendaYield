@@ -222,3 +222,169 @@ th {
   align-items: center;
   margin-bottom: 0.35rem;
 }
+
+.lab-banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  align-items: baseline;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(240, 180, 41, 0.35);
+  background: rgba(240, 180, 41, 0.08);
+  color: #ffe6a8;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.lab-banner strong {
+  letter-spacing: 0.06em;
+  font-size: 0.75rem;
+}
+
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.35rem;
+}
+
+.section-nav a {
+  border: 1px solid rgba(45, 212, 168, 0.22);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  color: var(--ink);
+  background: rgba(7, 20, 15, 0.45);
+}
+
+.section-nav a:hover,
+.section-nav a:focus-visible {
+  border-color: rgba(45, 212, 168, 0.55);
+  outline: none;
+}
+
+.panel-lede {
+  margin: -0.35rem 0 0.85rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.kpi-hint {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.empty {
+  color: var(--muted);
+  margin: 0.25rem 0 0;
+  font-size: 0.92rem;
+}
+
+.error-hint {
+  margin-top: 0.45rem;
+  font-size: 0.85rem;
+  color: #ffd0d0;
+}
+
+.error-hint code {
+  font-size: 0.8rem;
+}
+
+.method-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.method-list li {
+  margin-bottom: 0.45rem;
+}
+
+.method-list strong {
+  color: var(--ink);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skeleton-wrap {
+  display: grid;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.skeleton-grid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.skeleton-block {
+  border-radius: 14px;
+  border: 1px solid rgba(45, 212, 168, 0.1);
+  background: linear-gradient(
+    90deg,
+    rgba(16, 32, 24, 0.7) 0%,
+    rgba(45, 212, 168, 0.08) 50%,
+    rgba(16, 32, 24, 0.7) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+.skeleton-hero {
+  height: 88px;
+}
+
+.skeleton-kpi {
+  height: 92px;
+}
+
+.skeleton-panel {
+  height: 180px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@media (max-width: 640px) {
+  main {
+    padding: 1.25rem 1rem 3rem;
+  }
+
+  .brand {
+    font-size: 2rem;
+  }
+
+  th,
+  td {
+    font-size: 0.82rem;
+  }
+}
+

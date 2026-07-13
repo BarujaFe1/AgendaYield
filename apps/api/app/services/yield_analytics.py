@@ -1,8 +1,5 @@
 from __future__ import annotations
 
-from datetime import datetime, timezone
-
-import numpy as np
 import pandas as pd
 
 from app.services.demo_data import get_appointments
@@ -19,6 +16,8 @@ def _risk_score(row: pd.Series) -> float:
     prior = float(row["prior_no_shows"])
     conf = str(row["confirmation_status"])
     lead = float(row["lead_time_hours"])
+    # pandas dayofweek: Mon=0 … Sun=6. Weekend = Sat/Sun (5, 6).
+    # Keep parity with TS `Date#getDay()` weekend check (0 or 6).
     weekday = int(row["starts_at"].dayofweek)
     hour = int(row["starts_at"].hour)
 

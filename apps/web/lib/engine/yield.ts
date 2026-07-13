@@ -14,11 +14,13 @@ function parseDate(iso: string): Date {
   return new Date(iso);
 }
 
-function riskScore(row: Appointment): number {
+/** Interpretable no-show risk in [0, 1]. Keep in sync with Python `_risk_score`. */
+export function riskScore(row: Appointment): number {
   const prior = row.prior_no_shows;
   const conf = row.confirmation_status;
   const lead = row.lead_time_hours;
   const starts = parseDate(row.starts_at);
+  // JS getDay(): 0=Sun … 6=Sat. Weekend = Sun/Sat (parity with Python dayofweek 5/6).
   const weekday = starts.getDay();
   const hour = starts.getHours();
 
@@ -33,7 +35,7 @@ function riskScore(row: Appointment): number {
   return Math.min(0.97, Math.max(0.03, score));
 }
 
-function band(score: number): "low" | "medium" | "high" {
+export function band(score: number): "low" | "medium" | "high" {
   if (score >= 0.65) return "high";
   if (score >= 0.4) return "medium";
   return "low";
