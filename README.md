@@ -3,490 +3,269 @@
 
   <h1>AgendaYield</h1>
 
-  <p><strong>Yield da agenda, risco de no-show e recuperação de horários ociosos para negócios de serviço.</strong></p>
-  <p><strong>Agenda yield, no-show risk and idle-slot recovery for service businesses.</strong></p>
+  <p><strong>Cockpit de yield de agenda — ocupação, risco de no-show, fila de confirmação e receita recuperável.</strong></p>
+  <p><strong>Agenda yield cockpit — occupancy, no-show risk, confirmation backlog and recoverable revenue.</strong></p>
 
   <p>
-    <a href="#1-visão-geral--overview">PT-BR / English Overview</a> •
-    <a href="#-product-preview">Preview</a> •
-    <a href="#-screenshots">Screenshots</a> •
-    <a href="#️-stack--tecnologias">Stack</a> •
-    <a href="#-arquitetura--architecture">Architecture</a> •
-    <a href="#-quick-start--início-rápido">Quick Start</a> •
-    <a href="#-autor--author">Author</a>
+    <a href="#pt-br">PT-BR</a> ·
+    <a href="#en">English</a> ·
+    <a href="#live-demo">Live Demo</a> ·
+    <a href="#stack--tecnologias">Stack</a> ·
+    <a href="#arquitetura--architecture">Architecture</a> ·
+    <a href="#quick-start--início-rápido">Quick Start</a> ·
+    <a href="#autor--author">Author</a>
   </p>
 
   <p>
+    <a href="https://barujafe1.github.io/AgendaYield/"><img alt="Live Demo" src="https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
     <img alt="Next.js" src="https://img.shields.io/badge/Next.js-15-000000?style=for-the-badge&logo=nextdotjs" />
     <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-React-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-    <img alt="Python" src="https://img.shields.io/badge/Python-Analytics-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+    <img alt="Python" src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" />
     <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-API-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-    <img alt="Pandas" src="https://img.shields.io/badge/Pandas-Agenda%20Yield-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-    <img alt="No-Show Recovery" src="https://img.shields.io/badge/No--Show-Recovery%20Cockpit-2DD4A8?style=for-the-badge" />
+    <img alt="Lab Demo" src="https://img.shields.io/badge/Status-Lab%20demo-2563EB?style=for-the-badge" />
+    <img alt="MIT" src="https://img.shields.io/badge/License-MIT-111827?style=for-the-badge" />
+  </p>
+
+  <p>
+    <a href="https://barujafe1.github.io/AgendaYield/"><strong>Live Demo</strong></a> ·
+    <a href="https://github.com/BarujaFe1/AgendaYield"><strong>Repositório</strong></a> ·
+    <a href="https://barujafe.vercel.app/"><strong>Portfólio</strong></a> ·
+    <a href="https://www.linkedin.com/in/barujafe/"><strong>LinkedIn</strong></a>
   </p>
 </div>
 
 <p align="center">
-  <img src="./assets/hero-cover.png" alt="AgendaYield product overview" width="100%" />
+  <img src="./assets/hero-cover.png" alt="AgendaYield overview" width="100%" />
 </p>
 
-<p align="center">
-  <a href="https://barujafe1.github.io/AgendaYield/"><strong>🌐 Live Demo</strong></a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/BarujaFe1/AgendaYield"><strong>GitHub</strong></a>
-</p>
+---
 
-> **Live demo note:** the public lab runs a **frontend-first** yield cockpit in the browser (synthetic studio agenda on GitHub Pages). The FastAPI package remains available for local/API workflows. A Vercel project (`agenda-yield`, root `apps/web`) is linked for future Hobby-quota deploys. This is an operational analytics lab — **not** a clinic EMR, marketplace, or production booking system.
+<a id="pt-br"></a>
+
+## PT-BR
+
+## Visão geral
+
+**AgendaYield** é um cockpit de yield para negócios de serviço: ocupação, risco de no-show, backlog de confirmação e receita recuperável em formato de lab.
+
+> **Aviso de lab:** demo de portfólio com dados sintéticos/amostra. Não é produto em produção com SLA, integrações reais de clientes ou garantia operacional.
 
 ---
 
-## 1. Visão Geral / Overview
+## Problema
 
-O **AgendaYield** é um SaaS de yield para negócios com agenda que perdem receita por no-show, buracos na grade, baixa ocupação e reagendamento caótico.
-
-Ele cruza agenda, histórico, confirmação e comparecimento para mostrar **risco de falta**, **capacidade ociosa**, **receita perdida** e uma **lista de ações de recuperação**. Em vez de ser só mais uma agenda, o produto maximiza ocupação paga e reduz perda operacional.
-
-O projeto foi desenvolvido por **Felipe Alirio Baruja** como peça de portfólio que demonstra produto de dados temporais, UX operacional, cálculo de ROI e automação preparada para clínicas estéticas, salões, studios e serviços recorrentes.
-
-> **Operational Yield Notice**  
-> O AgendaYield foi criado para gestão de ocupação e recuperação de horários. Ele **não é** prontuário eletrônico, **não armazena** dado médico sensível no MVP e **não** substitui um marketplace de reservas.
+Agendas cheias no papel ainda perdem dinheiro com no-show e confirmação atrasada. Falta um painel de yield operacional.
 
 ---
 
-## ✨ Product Preview
+## Para quem
 
-<p align="center">
-  <img src="./assets/screenshots/01-calendar-yield-cockpit.png" alt="AgendaYield Calendar Yield Cockpit" width="100%" />
-</p>
-
-O AgendaYield apresenta uma experiência operacional premium: KPIs de yield, risco de no-show, fila de confirmação, ocupação por profissional, receita perdida e ações rápidas de recuperação.
+- Clínicas, salões e serviços com agenda
+- Operações de atendimento
+- Gestores de receita de serviço
 
 ---
 
-## 2. Por que este projeto importa? / Why this project matters
+## Funcionalidades
 
-* **Cada horário vazio é receita que não volta:** No-show e cancelamento tardio geram ociosidade cara em negócios de ticket médio/alto.
-* **Agenda comum não otimiza yield:** Marcar horário não é o mesmo que maximizar ocupação paga e recuperar buracos.
-* **O comprador entende o ROI:** Dono/gestor de agenda visualiza receita perdida e ações com impacto estimado em R$.
-* **Portfólio com dor real:** Combina analytics temporal, scoring interpretável, UX de cockpit e posicionamento SaaS vendável.
-
----
-
-## 🧠 O diferencial do AgendaYield / What makes AgendaYield different
-
-### Português
-O AgendaYield não compete como agenda genérica. Ele é um **cockpit de yield**:
-- mede ocupação e no-show;
-- ranqueia risco de falta com score interpretável;
-- organiza confirmações pendentes;
-- estima receita perdida e recuperável;
-- sugere encaixes e ações operacionais.
-
-### English
-AgendaYield is not a generic booking calendar. It is a **yield cockpit**:
-- measures occupancy and no-shows;
-- ranks absence risk with an interpretable score;
-- organizes pending confirmations;
-- estimates lost and recoverable revenue;
-- suggests fill-in slots and operational actions.
+- Ocupação da agenda
+- Risco de no-show
+- Backlog de confirmação
+- Receita recuperável
+- Demo GitHub Pages
 
 ---
 
-## 🎯 Problema que resolve / The problem it solves
+## Escopo e limites
 
-Em operações reais de clínicas, salões e studios:
-- clientes esquecem, remarcam tarde ou não confirmam;
-- a grade fica com buracos difíceis de reaproveitar;
-- o gestor não vê receita perdida de forma clara;
-- lembretes manuais no WhatsApp não escalam;
-- planilhas e Google Calendar não priorizam risco.
-
-O **AgendaYield** cria uma camada entre “a agenda está cheia no papel” e “a agenda está convertendo em receita”.
+- **É:** lab de yield de agenda.
+- **Não é:** sistema de marcação completo, WhatsApp production, PMS hospitalar.
 
 ---
 
-## 🧩 Proposta / Yield Pipeline
+<a id="en"></a>
 
-O AgendaYield processa eventos de agenda e entrega uma visão estruturada de ocupação, risco e recuperação:
+## English
 
-```txt
-CSV / Google Calendar (manual no MVP)
-  ↓
-Cadastro de clientes e profissionais
-  ↓
-Status: confirmado / compareceu / faltou / cancelou
-  ↓
-KPIs de ocupação e no-show
-  ↓
-Score de risco interpretável
-  ↓
-Receita perdida + recuperável
-  ↓
-Fila de confirmação + lista de encaixe
-  ↓
-Ações de recuperação com impacto em R$
-```
+## Overview
+
+**AgendaYield** is a yield cockpit for service businesses: occupancy, no-show risk, confirmation backlog and recoverable revenue as a portfolio lab.
+
+> **Lab notice:** portfolio demo with synthetic/sample data. Not a production product with SLA, real customer integrations, or operational guarantees.
 
 ---
 
-## 📸 Screenshots
+## Problem
 
-<table>
-  <tr>
-    <td width="50%">
-      <img src="./assets/screenshots/01-calendar-yield-cockpit.png" alt="Calendar Yield Cockpit" />
-      <br />
-      <sub><strong>Calendar Yield Cockpit</strong> — ocupação, no-show, confirmação e receita perdida em um só painel.</sub>
-    </td>
-    <td width="50%">
-      <img src="./assets/screenshots/02-confirmation-queue.png" alt="Confirmation Queue" />
-      <br />
-      <sub><strong>Confirmation Queue</strong> — horários pendentes priorizados por proximidade e canal.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <img src="./assets/screenshots/03-noshow-risk-board.png" alt="No-Show Risk Board" />
-      <br />
-      <sub><strong>No-Show Risk Board</strong> — clientes com score de risco, histórico e ação recomendada.</sub>
-    </td>
-    <td width="50%">
-      <img src="./assets/screenshots/04-occupancy-by-pro.png" alt="Occupancy by Professional" />
-      <br />
-      <sub><strong>Occupancy by Professional</strong> — capacidade utilizada, faltas e perda por profissional.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <img src="./assets/screenshots/05-lost-revenue.png" alt="Lost Revenue" />
-      <br />
-      <sub><strong>Lost Revenue</strong> — visão semanal da receita que deixou de entrar por ociosidade.</sub>
-    </td>
-    <td width="50%">
-      <img src="./assets/screenshots/06-fill-in-slots.png" alt="Fill-in Slots" />
-      <br />
-      <sub><strong>Fill-in Slots</strong> — buracos recuperáveis com candidatos de waitlist.</sub>
-    </td>
-  </tr>
-</table>
+Paper-full agendas still lose money to no-shows and late confirmations. Teams lack an operational yield panel.
 
 ---
 
-## 📄 Weekly Report & Upgrade
+## Who it is for
 
-<p align="center">
-  <img src="./assets/screenshots/07-weekly-report.png" alt="AgendaYield Weekly Report" width="70%" />
-</p>
-
-O relatório semanal consolida ocupação, no-show, receita perdida e ações executadas. A tela de upgrade posiciona planos Solo / Studio / Pro com add-ons de SMS, WhatsApp e IA.
+- Clinics, salons and appointment-based services
+- Front-desk operations
+- Service revenue managers
 
 ---
 
-## 📌 Estudo de Caso / Case Study
+## Features
 
-### 📌 Estudo de Caso: Studio Aurora Aesthetic
-O dataset demo simula um studio estético com 3 profissionais, agenda de ~4 semanas, serviços de R$120 a R$890 e desfechos de confirmação/comparecimento. O AgendaYield calcula ocupação, no-show rate, receita perdida e prioriza clientes high-risk ainda sem confirmação.
-
-A camada de risco usa heurística interpretável (faltas prévias, status de confirmação, lead time, fim de semana/noite). O resultado é uma lista operacional de recuperação — não um modelo caixa-preta.
-
-### 📌 Case Study: Studio Aurora Aesthetic
-The demo dataset simulates an aesthetic studio with 3 professionals, ~4 weeks of agenda, services from R$120 to R$890 and confirmation/attendance outcomes. AgendaYield computes occupancy, no-show rate, lost revenue and prioritizes high-risk unconfirmed clients.
-
-The risk layer uses an interpretable heuristic (prior no-shows, confirmation status, lead time, weekend/evening). The output is an operational recovery list — not a black-box model.
+- Agenda occupancy
+- No-show risk
+- Confirmation backlog
+- Recoverable revenue
+- GitHub Pages demo
 
 ---
 
-## 🧭 Visual Story / Jornada Operacional
+## Scope and limits
 
-A experiência do AgendaYield foi pensada como uma jornada de yield:
-```txt
-1. Importar agenda CSV (ou carregar o demo do Studio Aurora)
-2. Ler os KPIs de ocupação, no-show e receita perdida
-3. Abrir o No-Show Risk Board e atacar high-risk pendentes
-4. Trabalhar a fila de confirmação por proximidade do horário
-5. Oferecer buracos na lista de encaixe / waitlist
-6. Executar ações de recuperação com impacto estimado em R$
-7. Revisar ocupação por profissional e rebalancear a grade
-8. Evoluir para lembretes automáticos e depósito/sinal (Fase 2)
-```
+- **Is:** agenda-yield lab.
+- **Is not:** full booking system, production WhatsApp, hospital PMS.
 
 ---
 
-## ⚙️ Funcionalidades Principais / Core Features
+<a id="live-demo"></a>
 
-### Calendar Yield Cockpit
-Painel inicial com ocupação, no-show, confirmação, buracos, receita perdida e receita recuperável.
+## Live Demo
 
-### No-Show Risk Board
-Score interpretável por horário/cliente com banda low/medium/high e ação recomendada.
+**URL:** [https://barujafe1.github.io/AgendaYield/](https://barujafe1.github.io/AgendaYield/)
 
-### Confirmation Queue
-Lista operacional de confirmações pendentes com canal e tempo até o atendimento.
+Demo hospedada para avaliação de portfólio / Hosted for portfolio review.
 
-### Occupancy by Professional
-Comparativo de capacidade utilizada, faltas e perda financeira por profissional.
-
-### Fill-in / Recovery Actions
-Buracos elegíveis para encaixe e backlog de ações priorizadas (`now` / `today` / `this_week`).
-
-### Billing-ready positioning
-Planos Solo R$49 · Studio R$129 · Pro R$249, com add-ons de SMS/WhatsApp/IA preparados para evolução comercial.
+> Lab demo — synthetic / sample data unless noted. Not a production SLA product.
 
 ---
 
-## 🛠️ Stack / Tecnologias
+<a id="stack--tecnologias"></a>
 
-### Frontend
-- **Framework:** Next.js 15 (App Router) & React 19
-- **Linguagem:** TypeScript
-- **Estilização:** CSS operacional premium (tema yield)
-- **Gráficos:** Recharts
-- **Ícones:** Lucide Icons
+## Stack / Tecnologias
 
-### Backend
-- **Framework API:** FastAPI & Uvicorn (Python)
-- **Modelagem & Validação:** Pydantic v2
-- **Processamento de Agenda:** Pandas / NumPy
-- **Suite de Testes:** Pytest
-
-### Infra prevista
-- Supabase, Google Calendar API, Resend/WhatsApp provider
-- Stripe / Mercado Pago, PostHog, Sentry, Vercel
+| Tecnologia | Uso no projeto |
+|---|---|
+| Next.js 15 / React 19 / TypeScript | UI |
+| Recharts / Lucide | Charts |
+| FastAPI / Pandas / NumPy | Métricas e API |
+| Pytest / Ruff | Testes |
 
 ---
 
-## 🧱 Arquitetura / Architecture
+<a id="arquitetura--architecture"></a>
 
-O projeto adota uma arquitetura monorepo simplificada:
+## Arquitetura / Architecture
 
-```text
+Monorepo API + web; workflow GitHub Actions possível em .github/.
+
+`	xt
 AgendaYield/
+├── .github/workflows/
 ├── apps/
-│   ├── web/                         # Frontend Next.js (App Router) — Live Demo
-│   │   ├── app/                     # Cockpit principal
-│   │   ├── components/              # Charts e blocos de UI
-│   │   ├── lib/                     # Client lab engine + API facade
-│   │   ├── public/data/             # Seed JSON/CSV sintético
-│   │   └── types/                   # Tipos TypeScript
-│   │
-│   └── api/                         # Backend FastAPI
-│       ├── app/
-│       │   ├── api/                 # Endpoints REST
-│       │   ├── models/              # Schemas Pydantic
-│       │   └── services/            # Yield analytics + risk score
-│       └── tests/                   # Pytest
-│
-├── data/
-│   └── seed/                        # studio_agenda_demo.csv
-│
-├── docs/                            # Pitch, roadmap e metodologia
-├── assets/                          # Ícone, hero, screenshots
-├── scripts/                         # Geração de seed + assets
-├── start.bat                        # Inicializador Windows
-└── README.md                        # Esta documentação
-```
+│   ├── api/
+│   └── web/
+├── assets/
+├── data/seed/
+├── docs/
+├── scripts/
+└── start.bat
+`
 
 ---
 
-## 🧱 Visual Architecture
+<a id="quick-start--início-rápido"></a>
 
-<p align="center">
-  <img src="./assets/architecture-pipeline.png" alt="AgendaYield visual architecture" width="100%" />
-</p>
+## Quick Start / Início rápido
 
-AgendaYield follows a yield flow: agenda events enter the pipeline, get classified by confirmation/attendance, scored for no-show risk, converted into occupancy/lost-revenue KPIs and surfaced as recovery actions.
+### Pré-requisitos / Requirements
 
----
+- Node.js 20+
+- Python 3.12+
+- npm
 
-## 🔁 Data Flow Pipeline
+### Clonar / Clone
 
-```txt
-Agenda Events (CSV / Calendar)
-  ↓
-Client + Professional Mapping
-  ↓
-Confirmation / Attendance Status
-  ↓
-Occupancy & No-Show KPIs
-  ↓
-Interpretable Risk Score
-  ↓
-Lost / Recoverable Revenue
-  ↓
-Confirmation Queue + Fill-in Slots
-  ↓
-Recovery Action Board
-```
+`ash
+git clone https://github.com/BarujaFe1/AgendaYield.git
+cd AgendaYield
+`
 
----
+### Windows (atalho)
 
-## 🚀 Quick Start / Início Rápido
+`at
+start.bat
+`
 
-### Live Demo
-Abra o lab publicado: **[https://barujafe1.github.io/AgendaYield/](https://barujafe1.github.io/AgendaYield/)**
+Sobe API em :8000 e web em :3000.
 
-Checklist rápido na demo:
-1. Ler KPIs de ocupação, no-show e receita perdida
-2. Abrir o No-Show Risk Board (high / medium / low)
-3. Trabalhar a fila de confirmação pendente
-4. Revisar lista de encaixe e ações de recuperação com impacto em R$
+### Manual
 
-### Pré-requisitos (local)
-- **Node.js** v20 ou superior
-- **Python** v3.10 ou superior (opcional — só se for usar a API FastAPI)
-- **Git**
+`ash
+# API
+cd apps/api
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload --port 8000
+`
 
-### Opção 1 — Frontend-only (mesmo modo da Vercel)
-```bash
+`ash
+# Web (outro terminal)
 cd apps/web
 npm install
 npm run dev
-```
-*Lab em [http://localhost:3000](http://localhost:3000). A analytics roda no browser com `public/data/studio_agenda_demo.json`.*
+`
 
-### Opção 2 — Execução integrada no Windows (web + API)
-Na pasta raiz do projeto:
-```bash
-start.bat
-```
-Este script cria o venv Python, instala dependências, sobe a API FastAPI na porta `8000`, o frontend Next.js na porta `3000` e abre o navegador.
+Abra http://localhost:3000
 
-### Opção 3 — API FastAPI manual (`apps/api`)
+Copie .env.example se precisar de NEXT_PUBLIC_API_URL.
 
-#### 0. Gerar seed e assets (se necessário)
-```bash
-python scripts/generate_assets_and_seed.py
-```
-
-#### 1. Backend
-```bash
-cd apps/api
-python -m venv .venv
-.venv\Scripts\activate            # Windows
-source .venv/bin/activate          # Linux/macOS
-pip install -r requirements.txt
-uvicorn app.main:app --reload --port 8000
-```
-*API ativa em [http://127.0.0.1:8000](http://127.0.0.1:8000). Docs em `/docs`.*
 
 ---
 
-## 🧪 Scripts e Testes / Scripts and Testing
+## Technical decisions / Decisões técnicas
 
-### Backend (FastAPI / Pytest)
-```bash
-cd apps/api
-.venv\Scripts\python -m pytest
-```
-
-### Frontend (Next.js)
-```bash
-cd apps/web
-npm run lint
-npm run typecheck
-npm run build
-```
+- **Receita recuperável** como métrica de ação, não só ocupação.
+- **Pages** para demo estável.
+- **Seeds** sem PII real de pacientes/clientes.
 
 ---
 
-## 📊 Metodologia de Risco / Risk Methodology
+## Roadmap
 
-O MVP usa um score interpretável (não caixa-preta):
-* **Prior no-shows:** histórico de faltas aumenta o risco.
-* **Confirmação pendente/recusada:** maior peso operacional.
-* **Lead time curto ou muito longo:** ajusta probabilidade de ausência.
-* **Fim de semana / noite:** leve incremento contextual.
-* **Bandas:** low &lt; 0.40 · medium ≥ 0.40 · high ≥ 0.65.
+### Implementado
+- Ocupação, no-show, confirmação, receita recuperável, Pages
 
-Detalhes em [docs/technical_methodology.md](./docs/technical_methodology.md).
-
----
-
-## 🛡️ Segurança e Escopo Responsável
-
-* **Sem dado médico sensível no MVP:** foco em agenda operacional, não prontuário.
-* **Demo sintético:** seed de studio estético sem clientes reais.
-* **Segredos fora do Git:** `.env` ignorado; apenas `.env.example` versionado.
-* **Não é marketplace:** o produto recupera horários da operação do cliente, não cria praça pública de reservas.
+### Planejado
+- Regras de overbooking simuladas
+- Integração mock de confirmação
+- Mais segmentos de serviço
 
 ---
 
-## 🧭 Roadmap do Produto
+<a id="autor--author"></a>
 
-* **MVP:** CSV/demo, dashboard, risk board, confirmações, encaixe, ações, billing preparado.
-* **Fase 2:** Google Calendar, lembretes automáticos, depósito/sinal, templates.
-* **Fase 3:** otimização de grade, previsão de demanda, pagamentos, multiunidade.
+## Autor / Author
 
-Ver [docs/product_roadmap.md](./docs/product_roadmap.md).
+Developed by **Felipe Alirio Baruja**.
 
----
-
-## 💼 Valor para Portfólio / Portfolio Value
-
-O AgendaYield demonstra competências de **product analytics**, **SaaS operacional** e **full-stack**:
-- tradução de dor econômica (receita perdida) em UX acionável;
-- scoring interpretável com limites explícitos;
-- monorepo Next.js + FastAPI;
-- narrativa comercial clara (ICP, pricing, roadmap).
+- **Portfolio:** [https://barujafe.vercel.app/](https://barujafe.vercel.app/)
+- **GitHub:** [github.com/BarujaFe1](https://github.com/BarujaFe1)
+- **LinkedIn:** [linkedin.com/in/barujafe](https://www.linkedin.com/in/barujafe/)
+- **Repository:** [github.com/BarujaFe1/AgendaYield](https://github.com/BarujaFe1/AgendaYield)
 
 ---
 
-## 📚 Documentação Complementar
+## License / Licença
 
-- [docs/portfolio_pitch.md](./docs/portfolio_pitch.md) — pitch, LinkedIn e talking points
-- [docs/product_roadmap.md](./docs/product_roadmap.md) — fases MVP → 3 e fora de escopo
-- [docs/technical_methodology.md](./docs/technical_methodology.md) — score, KPIs e limites
+MIT License.
 
----
-
-## 🖼️ GitHub Social Preview
-
-Uma imagem para visualização social está disponível em:
-```txt
-assets/social-preview.png
-```
-*Dimensão recomendada: 1280x640, &lt;1MB. Faça upload em: Repository Settings → Social Preview.*
+See [LICENSE](./LICENSE) for details.
 
 ---
 
-## 🔖 GitHub Repository Metadata
-
-### About sugerido
-```txt
-Agenda yield cockpit for service businesses — occupancy, no-show risk, confirmation backlog and recoverable revenue.
-```
-
-### Topics sugeridos
-```txt
-agendayield
-no-show
-appointment-scheduling
-yield-management
-occupancy
-fastapi
-nextjs
-typescript
-python
-pandas
-saas
-portfolio-project
-operational-analytics
-calendar-analytics
-```
-
----
-
-## 👤 Autor / Author
-
-Desenvolvido por **Felipe Alirio Baruja**.
-
-- **Portfolio:** [barujafe.vercel.app](https://barujafe.vercel.app/)
-- **GitHub:** [@BarujaFe1](https://github.com/BarujaFe1)
-- **LinkedIn:** [Gustavo Felipe Alirio Baruja](https://www.linkedin.com/in/barujafe/)
-
----
-
-## 📄 Licença / License
-
-MIT License. Copyright (c) 2026 Felipe Alirio Baruja.
-O código está disponível sob a licença MIT caso o arquivo `LICENSE` esteja presente no repositório.
+<div align="center">
+  <p><strong>AgendaYield</strong></p>
+  <p>Agenda com yield e receita recuperável.</p>
+  <p><em>Agenda yield with recoverable revenue.</em></p>
+</div>
